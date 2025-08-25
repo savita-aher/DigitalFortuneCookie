@@ -1,6 +1,53 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    height: 100%;
+body {
+  font-family: sans-serif;
+  background: #fdf6e3;
+  color: #333;
+  text-align: center;
+  padding: 2rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+body.dark {
+  background: #1e1e1e;
+  color: #fdf6e3;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+.toggle {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+body.dark button {
+  background-color: #444;
+  color: #fdf6e3;
+}
+
+.fortune {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  transition: opacity 0.5s ease;
+}
+
+body.dark .fortune {
+  color: #fdf6e3;
 }

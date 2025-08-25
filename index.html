@@ -3,15 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fortune Cookie</title>
-  <link rel="stylesheet" href="Styles/style.css">
-  
-  <script defer src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <script src="Scripts/script.js"></script>
+  <title>Digital Fortune Cookie</title>
+  <link rel="stylesheet" href="Styles/style.css" />
+   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script defer src="Scripts/script.js"></script>
 </head>
 <body>
   <div class="container">
-    <h1>🥠 Crack Your Fortune Cookie</h1>
-</div>
+    <h1> Crack Your Fortune Cookie</h1>
+
+    <label class="toggle">
+      <input type="checkbox" id="darkToggle" />
+        Dark Mode
+    </label>
+    <button id="crackBtn">Crack the Cookie</button>
+    <div id="fortuneDisplay" class="fortune"></div>
+  </div>
 </body>
 </html>
