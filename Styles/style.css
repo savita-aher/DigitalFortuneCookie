@@ -1,7 +1,6 @@
 body {
   font-family: sans-serif;
   background: #fdf6e3;
-  color: #333;
   text-align: center;
   padding: 2rem;
   transition: background 0.3s ease, color 0.3s ease;
@@ -42,9 +41,20 @@ body.dark button {
   color: #fdf6e3;
 }
 
+.cookie {
+  width: 50px;
+  margin: 1rem auto;
+  transition: transform 0.4s ease;
+}
+
+.cookie.cracked {
+  transform: rotate(20deg) scale(1.1);
+}
+
 .fortune {
   margin-top: 2rem;
   font-size: 1.5rem;
+  color: #333;
   transition: opacity 0.5s ease;
 }
 
